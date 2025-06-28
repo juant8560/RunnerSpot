@@ -1,26 +1,19 @@
-const home = {
-    cards: [
-       {
-            cardTitle:"Tarjeta 1",
-            cardImg:"https://picsum.photos/id/101/300/200",
-            cardBody:"LoremImpsum"
-       },
-       {
-            cardTitle:"Tarjeta 2",
-            cardImg:"https://picsum.photos/id/102/300/200",
-            cardBody:"LoremImpsum"
-       },
-       {
-            cardTitle:"Tarjeta 3",
-            cardImg:"https://picsum.photos/id/103/300/200",
-            cardBody:"LoremImpsum"
-       },
-       {
-            cardTitle:"Tarjeta 4",
-            cardImg:"https://picsum.photos/id/203/300/200",
-            cardBody:"LoremImpsum"
-       }
-    ]
+export default {
+     tarjeta: [
+          {
+               imagen: "images/run.jpg",
+               nombre: "Excelencia",
+               mensaje: "Nos enorgullecemos en brindar a nuestros clientes los productos de las mejores marcas."
+          },
+          {
+               imagen: "images/mas.jpg",
+               nombre: "Más+",
+               mensaje: "Pide ya la bebida de Lionel Messi."
+          },
+          {
+               imagen: "images/gel.jpg",
+               nombre: "Gel",
+               mensaje: "Recuerda utilizar geles que brindan mejores beneficios."
+          }
+     ]
 }
-
-export default home;

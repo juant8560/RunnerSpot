@@ -5,6 +5,7 @@ import handlebars from 'vite-plugin-handlebars';
 import path, {resolve} from 'node:path';
 import * as glob from 'glob';
 
+import getPageContext from './siteData';
 
 const obtenerEntradas = ()=> {
     return Object.fromEntries(
@@ -40,6 +41,7 @@ export default defineConfig(
         plugins: [
             handlebars({
                 partialDirectory: resolve(__dirname, 'partials'),
+                context: getPageContext
             }),
             htmlPurge({}),
             ViteMinifyPlugin(),

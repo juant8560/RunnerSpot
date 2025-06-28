@@ -3,41 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="less/principal.less">
+    <link rel="stylesheet" href="less/principal.less" />
     <title>RunnerSpot</title>
   </head>
   <body>
-    {{>header}}
+    {{> header }}
     <main>
       <section class="hero">
-        <img src="https://picsum.photos/id/200/1405/800" alt="Corredores 1">
+        <img src="images/pexels-runffwpu-2526878.jpg" alt="Corredores1" />
       </section>
-
-      <section class="testimonios">
-        <h2>Lo que dicen nuestros corredores</h2>
-        <div class="cards">
-          <div class="card">
-            <p></p>
-            <h4></h4>
-          </div>
-          <div class="card">
-            <p></p>
-            <h4></h4>
-          </div>
-          <div class="card">
-            <p></p>
-            <h4></h4>
-          </div>
-        </div>
-      </section>
+      {{> cards testimonios=tarjeta }}
       <section class="video">
-        <h2>Así se vive una carrera con RunnerSpot</h2>>
       </section>
-
     </main>
-
-    <footer>
-      <p>© 2025 RunnerSpot. Todos los derechos reservados.</p>
-    </footer>
+    {{>footer}}
   </body>
 </html>
