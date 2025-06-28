@@ -1,13 +1,15 @@
 footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  padding: 20px;
+  gap: 10px;
+  padding: 15px;
   background-color: @primary-background-color;
   color: @primary-text-color;
   font-size: 14px;
-  
+  text-align: center;
+
   p {
     margin: 0;
   }
@@ -16,8 +18,8 @@ footer {
     display: inline-block;
 
     img {
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
       filter: invert(1);
       transition: filter 0.3s ease;
 
@@ -25,5 +27,14 @@ footer {
         filter: invert(0.7) sepia(1) saturate(4) hue-rotate(300deg);
       }
     }
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    font-size: 16px;
+    padding: 20px;
+    gap: 20px;
   }
 }
