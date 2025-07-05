@@ -10,7 +10,7 @@ function context(page) {
         case "/index.html":
             context = { ...context, ...indexData };
             break;
-        case "/nostros.html":
+        case "/nosotros.html":
             context = { ...context, ...aboutData };
             break;
     }
