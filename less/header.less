@@ -6,6 +6,7 @@ header {
   align-items: flex-start;
   padding: 1rem 1.5rem;
   gap: 1rem;
+  position: relative;
 
   .logo {
     display: flex;
@@ -24,8 +25,30 @@ header {
     }
   }
 
+  #menu-toggle {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+    span {
+      width: 25px;
+      height: 3px;
+      background-color: @primary-text-color;
+      transition: 0.3s;
+    }
+  }
+
   nav {
     width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+
     ul {
       list-style: none;
       display: flex;
@@ -48,6 +71,10 @@ header {
       }
     }
   }
+
+  #menu-toggle:checked + .hamburger + nav {
+    max-height: 300px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -55,13 +82,22 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 0;
+
+    .hamburger {
+      display: none;
+    }
 
     nav {
+      max-height: none;
+      overflow: visible;
+      width: auto;
+
       ul {
         flex-direction: row;
         gap: 1.5rem;
-        margin-top: 0;
       }
     }
   }
 }
+
