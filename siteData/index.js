@@ -1,13 +1,17 @@
 import indexData from './pages/home';
+import aboutData from "./pages/about.js";
 
-function context(page){
+function context(page) {
     console.log("Getting context for: " + page);
     let context = {
         title: "Mi Sitio ABC",
     }
-    switch(page){
+    switch (page) {
         case "/index.html":
-            context = {...context, ...indexData};
+            context = { ...context, ...indexData };
+            break;
+        case "/nostros.html":
+            context = { ...context, ...aboutData };
             break;
     }
     console.log("Context: ", JSON.stringify(context, null, 2));
