@@ -25,6 +25,12 @@ header {
     }
   }
 
+  // Mueve esto fuera de .logo
+  a.logo {
+    text-decoration: none;
+    color: inherit;
+  }
+
   #menu-toggle {
     display: none;
   }
@@ -72,7 +78,7 @@ header {
     }
   }
 
-  #menu-toggle:checked + .hamburger + nav {
+  #menu-toggle:checked+.hamburger+nav {
     max-height: 300px;
   }
 }
@@ -100,4 +106,3 @@ header {
     }
   }
 }
-
