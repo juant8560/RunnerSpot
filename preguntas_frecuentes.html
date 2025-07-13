@@ -10,29 +10,7 @@
     <body>
         {{>header}}
         <main>
-            <div class="contenedor-faq">
-                <div class="titulo">FAQ</div>
-                <div class="contenido-faq">
-                    <details class="pregunta-faq">
-                        <summary>
-                            <span>Pregunta 1</span>
-                            <b></b>
-                        </summary>
-                        <div class="respuesta-faq">
-                            RESPUESTA 1 XD
-                        </div>
-                    </details>
-                    <details class="pregunta-faq">
-                        <summary>
-                            <span>Pregunta 2</span>
-                            <b></b>
-                        </summary>
-                        <div class="respuesta-faq">
-                            RESPUESTA 2 XD
-                        </div>
-                    </details>
-                </div>
-            </div>
+            {{>faq faq=preguntas}}
         </main>
         {{>footer}}
         <script src="menu.js" defer></script>

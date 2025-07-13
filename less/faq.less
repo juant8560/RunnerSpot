@@ -1,34 +1,40 @@
 .contenedor-faq {
-    max-width: 1368px;
-    width: 60%;
+    max-width: 90%;
     margin: auto;
-    padding: 10px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    .p-g-2-2();
+    background-color: @primary-background-color;
+    .mini-borde-redondo();
 
     .titulo {
         text-align: center;
-        font-size: 24px;
+        font-size: 26px;
         font-weight: bold;
         margin-bottom: 10px;
+        color: @secondary-background-color;
     }
 
     .contenido-faq {
         .pregunta-faq {
             border-radius: 5px;
             margin-bottom: 10px;
-
             summary {
                 font-weight: 700;
-                padding: 10px;
+                .p-g-1-1();
                 display: flex;
                 justify-content: space-between;
 
                 span {
+                    font-size: 20px;
                     display: block;
                     width: 80%;
+                    color: @secondary-background-color;
                 }
 
                 b {
                     &:after {
+                        color: @secondary-background-color;
                         content: '+';
                         font-size: 18px;
                         margin-right: 5px;
@@ -37,8 +43,8 @@
 
                 &:hover {
                     cursor: pointer;
-                    background-color: bisque;
-                    border-radius: 8px;
+                    background-color: @primary-text-color;
+                    .mini-borde-redondo();
                     transform: scale(1.02); 
                     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
                     transition: all 0.3s ease-in-out;
@@ -50,17 +56,18 @@
             }
 
             &[open] summary{
-                background-color: bisque;
+                background-color: @primary-text-color;
                 border-bottom: 1px solid black;
-                border-radius: 5px;
+                .mini-borde-redondo();
             }
 
             .respuesta-faq {
-                padding: 10px;
-                font-size: 14px;
+                margin: 15px 5px;
+                .p-g-1-1();
+                font-size: 20px;
                 line-height: 20px;
-                border: 1px solid black;
-                border-radius: 5px
+                border: 2px solid rgb(255, 255, 255);
+                .mini-borde-redondo()
             }
         }
     }

@@ -1,0 +1,16 @@
+<div class="contenedor-faq">
+    <div class="titulo">🏃‍♂️ FAQ - Preguntas Frecuentes | RunnerSpot</div>
+    <div class="contenido-faq">
+        {{#each faq}}
+        <details class="pregunta-faq">
+            <summary>
+                <span>{{pregunta}}</span>
+                <b></b>
+            </summary>
+            <div class="respuesta-faq">
+                {{respuesta}}
+            </div>
+        </details>
+        {{/each}}
+    </div>
+</div>

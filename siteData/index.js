@@ -1,5 +1,6 @@
 import indexData from './pages/home';
 import aboutData from "./pages/about.js";
+import faqData from "./pages/faq.js";
 
 function context(page) {
     console.log("Getting context for: " + page);
@@ -12,6 +13,9 @@ function context(page) {
             break;
         case "/nosotros.html":
             context = { ...context, ...aboutData };
+            break;
+        case "/preguntas_frecuentes.html":
+            context = { ...context, ...faqData };
             break;
     }
     console.log("Context: ", JSON.stringify(context, null, 2));
