@@ -5,14 +5,16 @@
     margin-bottom: 1.5rem;
     .p-g-2-2();
     background-color: @primary-background-color;
+    border-left: 10px solid @secondary-background-color;
+    border-right: 10px solid @secondary-background-color; 
     .mini-borde-redondo();
 
     .titulo {
         text-align: center;
         font-size: 26px;
         font-weight: bold;
-        margin-bottom: 10px;
-        color: @secondary-background-color;
+        margin-bottom: 15px;
+        color: @primary-text-color;
     }
 
     .contenido-faq {
@@ -29,12 +31,12 @@
                     font-size: 20px;
                     display: block;
                     width: 80%;
-                    color: @secondary-background-color;
+                    color: @primary-text-color;
                 }
 
                 b {
                     &:after {
-                        color: @secondary-background-color;
+                        color: @primary-text-color;
                         content: '+';
                         font-size: 18px;
                         margin-right: 5px;
@@ -43,7 +45,7 @@
 
                 &:hover {
                     cursor: pointer;
-                    background-color: @primary-text-color;
+                    background-color: @secondary-background-color;
                     .mini-borde-redondo();
                     transform: scale(1.02); 
                     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
@@ -56,7 +58,7 @@
             }
 
             &[open] summary{
-                background-color: @primary-text-color;
+                background-color: @secondary-background-color;
                 border-bottom: 1px solid black;
                 .mini-borde-redondo();
             }
