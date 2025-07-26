@@ -1,0 +1,16 @@
+<h1>Consumibles</h1>
+<p>En esta sección encontrarás información sobre los consumibles disponibles para los corredores.</p>
+
+<section class="consumibles-section">
+  <div class="cards">
+    {{#each consu}}
+      <div class="consu-card">
+        <img src="{{img}}" alt="Foto de {{nombre}}" />
+        <h4>{{nombre}}</h4>
+        <p>{{descripcion}}</p>
+        <span class="card-price"> L {{precio}}</span>
+      <button class="card-btn">Agregar al carrito</button>
+      </div>
+    {{/each}}
+  </div>
+</section>
