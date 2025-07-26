@@ -1,0 +1,16 @@
+<section class="formulario seccion-contenedor">
+    <h2>Déjanos tu testimonio</h2>
+    <form method="POST" action="/enviar-testimonio">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <textarea name="comentario" rows="4" placeholder="Escribe tu testimonio" required></textarea>
+
+        <label for="calificacion"><strong>Calificación:</strong></label>
+        <select id="calificacion" name="calificacion" required>
+            {{#each formcalificacion}}
+            <option value="{{valor}}">{{estrella}}</option>
+            {{/each}}
+        </select>
+
+        <button type="submit">Enviar testimonio</button>
+    </form>
+</section>

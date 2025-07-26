@@ -1,0 +1,13 @@
+<section class="testimonials">
+    <h2>Historias que inspiran movimiento, ellos ya lo vivieron. ¿Y tú?</h2>
+    <div class="testimonials-container">
+        {{#each cardstestimonials}}
+                {{>testimonial
+                card-img=cardimg
+                card-alt=cardalt
+                card-title=cardtitle
+                card-body=cardbody
+                }}
+        {{/each}}
+    </div>
+</section>
