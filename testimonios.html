@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testimonios</title>
-    <link rel="stylesheet" href="less/principal.less" />
-    <link rel="icon" type="image/png" href="images/logo - copia.png">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Testimonios</title>
+        <link rel="stylesheet" href="less/principal.less" />
+        <link rel="icon" type="image/png" href="images/logo - copia.png">
+    </head>
 
-<body>
-    {{>header}}
-    <main>
-    </main>
-    {{>footer}}
-</body>
+    <body>
+        {{>header}}
+        <main>
+            {{>testimonials cardstestimonials=testimonios}}
+            {{>galeriatestimonio galeriacards=img}}
+            {{>formtestimonios formcalificacion=calificacion}}
+        </main>
+        {{>footer}}
+    </body>
 
 </html>

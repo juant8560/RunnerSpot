@@ -1,8 +1,10 @@
 import indexData from './pages/home';
 import aboutData from "./pages/about.js";
 import faqData from "./pages/faq.js";
+import testimonialsData from "./pages/testimonials.js";
+import galeriatestimonioData from './pages/galeriatestimonio.js';
+import formtestimoniosData from './pages/formtestimonios.js';
 import consumiblesData from "./pages/consumibles.js";   
-
 function context(page) {
     console.log("Getting context for: " + page);
     let context = {
@@ -19,6 +21,11 @@ function context(page) {
             context = { ...context, ...faqData };
         case "/consumibles.html":
             context = { ...context, ...consumiblesData };
+            break;
+        case "/testimonios.html":
+            context = { ...context, ...testimonialsData };
+            context = { ...context, ...galeriatestimonioData };
+            context = { ...context, ...formtestimoniosData };
             break;
     }
     console.log("Context: ", JSON.stringify(context, null, 2));
