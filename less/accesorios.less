@@ -1,0 +1,42 @@
+.grid-accesorio {
+  display: grid;
+  margin: 0 auto;
+  padding: 40px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+h1 {
+  color: @primary-background-color;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  padding: 1rem;
+}
+
+.accesorio-card {
+  background-color: @primary-background-color;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: @primary-text-color;
+}
+
+.accesorio-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.accesorio-card h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+  font-weight: bold;
+  color: @primary-text-color;
+}
+
+.accesorio-card p {
+  font-size: 1.2rem;
+  color: @primary-text-color;
+}
