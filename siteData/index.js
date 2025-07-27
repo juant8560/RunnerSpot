@@ -4,6 +4,8 @@ import faqData from "./pages/faq.js";
 import testimonialsData from "./pages/testimonials.js";
 import galeriatestimonioData from './pages/galeriatestimonio.js';
 import formtestimoniosData from './pages/formtestimonios.js';
+import eventsData from './pages/events.js';
+import challengesData from './pages/challenges.js';
 
 function context(page) {
     console.log("Getting context for: " + page);
@@ -24,6 +26,10 @@ function context(page) {
             context = { ...context, ...testimonialsData };
             context = { ...context, ...galeriatestimonioData };
             context = { ...context, ...formtestimoniosData };
+            break;
+         case "/eventos.html":
+            context = { ...context, ...eventsData };
+            context = { ...context, ...challengesData };
             break;
     }
     console.log("Context: ", JSON.stringify(context, null, 2));
