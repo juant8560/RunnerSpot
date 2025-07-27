@@ -19,6 +19,7 @@ section {
     text-align: center;
     color: @primary-text-color;
     overflow: hidden;
+
     .hero-image {
         position: absolute;
         top: 0;
@@ -29,19 +30,23 @@ section {
         z-index: 0;
         .p-g-2-2();
     }
+
     .hero-content {
         position: relative;
         z-index: 1;
         .p-g-2-2();
+
         h1 {
             font-size: 3rem;
             color: @primary-text-color;
         }
+
         p {
             font-size: 1.2rem;
             .margin-arriba-abajo();
             color: @primary-text-color;
         }
+
         button {
             background: @secondary-background-color;
             color: @primary-text-color;
@@ -59,6 +64,7 @@ section {
         flex-wrap: wrap;
         gap: 1rem;
         justify-content: center;
+
         .card {
             background: @primary-background-color;
             border: 8px solid @secondary-background-color;
@@ -66,21 +72,23 @@ section {
             width: 328px;
             text-align: center;
             .mini-borde-redondo();
-            img {
-                width: 100%;
-                border-radius: 5px;
-                margin-bottom: 15px;
+
+            p {
+                color: @primary-text-color;
             }
+
             h3 {
                 margin: 0;
                 color: @primary-text-color;
             }
+
             button {
                 padding: 0.5rem;
                 margin-top: 1rem;
                 .mini-borde-redondo();
                 background: @secondary-background-color;
                 color: @primary-text-color;
+
                 &:hover {
                     background: @primary-text-color;
                     color: @secondary-background-color;
@@ -97,6 +105,7 @@ section {
         gap: 1rem;
         flex-wrap: wrap;
         justify-content: space-between;
+
         .card {
             flex: 1 1 calc(50% - 0.5rem);
             max-width: calc(50% - 0.5rem);
@@ -108,6 +117,7 @@ section {
             text-align: center;
             width: 328px;
             height: 600px;
+
             img {
                 width: 100%;
                 max-height: 370px;
@@ -115,23 +125,28 @@ section {
                 margin-bottom: 15px;
                 .mini-borde-redondo();
             }
+
             .card-footer {
                 background-color: @primary-background-color;
                 .mini-borde-redondo();
                 padding: 1rem;
+
                 h3 {
                     margin: 0;
                     color: @primary-text-color;
                 }
+
                 p {
                     color: @primary-text-color;
                 }
+
                 button {
                     padding: 0.5rem;
                     margin-top: 1rem;
                     .mini-borde-redondo();
                     background: @secondary-background-color;
                     color: @primary-text-color;
+
                     &:hover {
                         background: #a0c3f6;
                         cursor: pointer;
@@ -144,14 +159,16 @@ section {
 
 .community {
     text-align: center;
+
     .card {
         background: @primary-background-color;
         .mini-borde-redondo();
         border: 8px solid @secondary-background-color;
-        display: flex; 
+        display: flex;
         justify-content: center;
-        gap: 2rem; 
+        gap: 2rem;
         padding: 1rem;
+
         .redes {
             display: flex;
             align-items: center;
@@ -161,17 +178,21 @@ section {
             border: 2px solid @secondary-background-color;
             .mini-borde-redondo();
             text-decoration: none;
+
             img {
                 width: 28px;
                 height: 28px;
             }
+
             p {
                 color: @primary-text-color;
                 margin: 0;
                 font-weight: bold;
             }
+
             &:hover {
                 background: @secondary-background-color;
+
                 p {
                     color: #fff;
                 }
