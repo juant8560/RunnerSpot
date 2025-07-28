@@ -6,7 +6,9 @@ import galeriatestimonioData from './pages/galeriatestimonio.js';
 import formtestimoniosData from './pages/formtestimonios.js';
 import eventsData from './pages/events.js';
 import challengesData from './pages/challenges.js';
-import consumiblesData from "./pages/consumibles.js";   
+import consumiblesData from "./pages/consumibles.js"; 
+import productosData from "./pages/productos.js";
+
 function context(page) {
     console.log("Getting context for: " + page);
     let context = {
@@ -32,6 +34,9 @@ function context(page) {
          case "/eventos.html":
             context = { ...context, ...eventsData };
             context = { ...context, ...challengesData };
+            break;
+        case "/productos_general.html":
+            context = { ...context, ...productosData };
             break;
     }
     console.log("Context: ", JSON.stringify(context, null, 2));

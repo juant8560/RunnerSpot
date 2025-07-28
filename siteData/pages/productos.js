@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const productos = [
+ export default{productos :[
         {
             nombre: "Gel Energético",
             descripcion: "Aumenta tu resistencia y energía durante tus entrenamientos largos.",
@@ -36,10 +35,5 @@ document.addEventListener("DOMContentLoaded", () => {
             precio: 400,
             imagen: "images/pack.jpg"
         }
-    ];
-
-    
-    console.log("Productos cargados:", productos);
-});
-
-
+    ]
+    }

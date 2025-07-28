@@ -3,16 +3,13 @@
 
 <section class="consumibles-section">
   <div class="productos-container">
-  {{#each productos}}
+    {{#each productos}}
     <div class="producto-card">
       <img src="{{this.imagen}}" alt="{{this.nombre}}">
       <h3>{{this.nombre}}</h3>
       <p>{{this.descripcion}}</p>
       <p class="precio">Precio: L.{{this.precio}}</p>
     </div>
-  {{/each}}
-</div>
-
+    {{/each}}
+  </div>
 </section>
-
-
