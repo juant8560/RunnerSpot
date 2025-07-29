@@ -1,0 +1,11 @@
+<section class="events">
+    <h2>Próximos Eventos</h2>
+    <div class="event-cards">
+        {{#each cardeventos}}
+            {{>cardevents
+            card-title=cardtitle
+            card-body=cardbody 
+            }}
+        {{/each}}
+    </div>
+</section>

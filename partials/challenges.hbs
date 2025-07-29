@@ -1,0 +1,12 @@
+<section class="challenges">
+    <h2>Desafía tus límites</h2>
+    <div class="challenge-cards">
+        {{#each challengescard}}
+            {{>cardchallenges
+            img=img
+            title=title
+            body=body
+            }}
+        {{/each}}
+    </div>
+</section>
